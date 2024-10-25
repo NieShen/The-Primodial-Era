@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "nirvanacraftmod:alexandrite_block",
+    "nirvanacraftmod:alexandrite_ore",
+    "nirvanacraftmod:alexandrite_deepslate_ore"
+  ]
+}

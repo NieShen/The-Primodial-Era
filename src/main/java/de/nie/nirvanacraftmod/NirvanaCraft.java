@@ -1,6 +1,10 @@
-package de.nie.nirvanacraft;
+package de.nie.nirvanacraftmod;
 
 import com.mojang.logging.LogUtils;
+import de.nie.nirvanacraftmod.block.NirvanaCraftBlocks;
+import de.nie.nirvanacraftmod.item.ModCreativeModeTabs;
+import de.nie.nirvanacraftmod.item.NirvanaCraftItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -19,7 +23,7 @@ import org.slf4j.Logger;
 @Mod(NirvanaCraft.MOD_ID)
 public class NirvanaCraft {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "nienirvanacraftmod";
+    public static final String MOD_ID = "nirvanacraftmod";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
@@ -29,7 +33,11 @@ public class NirvanaCraft {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
 
+
+        NirvanaCraftItems.register(modEventBus);
+        NirvanaCraftBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -44,6 +52,14 @@ public class NirvanaCraft {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(NirvanaCraftItems.ALEXANDRITE);
+            event.accept(NirvanaCraftItems.RAW_ALEXANDRITE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(NirvanaCraftBlocks.ALEXANDRITE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -1,4 +1,4 @@
-package de.nie.nirvanacraft;
+package de.nie.nirvanacraftmod;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;

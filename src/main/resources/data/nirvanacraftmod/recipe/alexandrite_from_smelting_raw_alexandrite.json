@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience" : 0.25,
+  "group" : "alexandrite",
+  "ingredient": {
+    "item" : "nirvanacraftmod:raw_alexandrite"
+  },
+  "result": {
+    "id" :  "nirvanacraftmod:alexandrite"
+  }
+}
+
