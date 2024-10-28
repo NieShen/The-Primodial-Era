@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "theprimodialera:block/alexandrite_deepslate_ore"
+
+  }
+}

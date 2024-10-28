@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "nirvanacraftmod:alexandrite_block",
-    "nirvanacraftmod:alexandrite_ore"
+    "theprimodialera:alexandrite_block",
+    "theprimodialera:alexandrite_ore"
   ]
 }

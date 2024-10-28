@@ -1,0 +1,13 @@
+{
+  "item.theprimodialera.alexandrite" : "Alexandrite Gem",
+  "item.theprimodialera.raw_alexandrite" : "Raw Alexandrite",
+
+  "block.theprimodialera.alexandrite_block" : "Block of Alexandrite",
+  "block.theprimodialera.alexandrite_ore" : "Alexandrite Ore",
+  "block.theprimodialera.alexandrite_deepslate_ore" : "Alexandrite Deepslate Ore",
+
+
+
+  "creativetab.theprimodialera.the_primodial_era_items" : "The Primodial Era Items",
+  "creativetab.theprimodialera.the_primodial_era_blocks" : "The Primodial Era Blocks"
+}
